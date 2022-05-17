@@ -1,5 +1,5 @@
 build:
-	npx @11ty/eleventy --output=docs --input=src
+	npx @11ty/eleventy --input=src
 
 serve:
-	npx @11ty/eleventy --serve --output=docs --input=src --formats=md,html,njk,css
+	npx @11ty/eleventy --serve --input=src --formats=md,html,njk,css
