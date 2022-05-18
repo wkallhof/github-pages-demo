@@ -1,4 +1,4 @@
-base := npx @11ty/eleventy --input=src --formats=md,html,njk,css
+base := npx @11ty/eleventy --config=./site/.eleventy.js --formats=md,html,njk,css
 
 build:
 	${base}
