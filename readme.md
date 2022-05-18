@@ -12,5 +12,10 @@ You can pull down the site source and modify styles and documents locally. This 
 ### Run
 `make serve`
 
+<<<<<<< HEAD
 ### Deploy
 By committing document changes to the `main` branch, Github Actions will automatically run `make build` and deploy the static site out to the `gh-pages` branch, which is what is what is configured in the document repo as the static source for the Github Pages site. 
+=======
+## Deploy
+By committing document changes to the `main` branch, Github Actions will automatically run `make build` and deploy the static site out to the `gh-pages` branch, which is what is configured in the document repo as the static source for the Github Pages site. 
+>>>>>>> 62191908097acfea77002e2b709b0688e5c4395c
