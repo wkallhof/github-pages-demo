@@ -4,6 +4,9 @@ layout: layout.njk
 
 # Persuade Engineering Docs
 
+## Pages
+* [.NET](dotnet.md)
+
 ### Tools
 Tools account for the IDEs, software, CI/CD services, version control solutions, etc. that we use day to day.
 
