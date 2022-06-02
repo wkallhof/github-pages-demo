@@ -6,26 +6,27 @@ title: CNA Engineering
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ title }}</title>
     <link rel="stylesheet" href="{{ '/assets/style.css' | url }}"/>
   </head>
   <body>
-    <nav>
-      <h2>Backend / API</h2>
-      <ul>
+
+    
+
+    <main class="container">
+      <aside>
+      <nav>
+        <ul>
       {%- for page in collections.api -%}
         <li><a href="{{ page.url | url }}">{{ page.data.title }}</a></li>
       {%- endfor -%}
       </ul>
+      </nav>
+  </aside>
+      {{ content | safe }}
 
-      <h2>Web Platform</h2>
-      <ul>
-      {%- for page in collections.web -%}
-        <li><a href="{{ page.url | url }}">{{ page.data.title }}</a></li>
-      {%- endfor -%}
-      </ul>
-    </nav>
-    {{ content | safe }}
+    </main>
+    
   </body>
 </html>
