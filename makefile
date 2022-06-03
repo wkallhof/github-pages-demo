@@ -1,4 +1,4 @@
-base := npx @11ty/eleventy --config=./site/.eleventy.js --formats=md,html,njk,css
+base := cd ./site && npm install && cd .. && npx @11ty/eleventy --config=./site/.eleventy.js --formats=md,html,njk,css
 
 build:
 	${base}
